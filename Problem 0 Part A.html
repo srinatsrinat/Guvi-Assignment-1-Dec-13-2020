@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+
+
+var cat = {
+ name : 'Fluffyy',
+ activities: ['play ', 'eat cat food'], 
+ catFriends: [ 
+ {
+ name : 'bar',
+ activities: ['be grumpy', 'eat bread omblet'],
+ weight: 8,
+ furcolor: 'white'
+ }, 
+ {
+ name: 'foo' ,
+ activities: ['sleep', 'pre-sleep naps'],
+ weight: 3
+ }
+ ]
+}
+cat.name = "Flufyy"
+cat.height = 1.5
+cat.weight = 3
+console.log('total weight of catfriends is', cat.catFriends[0].weight + cat.catFriends[1].weight)
+console.log('total activities of all cats', cat.catFriends[0].activities.length + cat.activities.length + cat.catFriends[1].activities.length)
+cat.catFriends[0].activities.push('purring', 'sleeping')
+cat.catFriends[1].activities.push('purring', 'sleeping')
+cat.catFriends[0].furcolor = 'grey'
+console.log(cat)
+
+</script>
+</head>
+</html>

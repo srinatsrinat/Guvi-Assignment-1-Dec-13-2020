@@ -1,0 +1,29 @@
+<html>
+<body>
+<script>
+//failure case
+var expected = {foo: 6, bar: 5}
+var actual = {foo: 5, bar: 6}
+
+function assertObjectequal(expected,actual){
+    
+    if(JSON.stringify(expected)==JSON.stringify(actual))
+    {
+        console.log('Passed')
+    }
+    else
+    {
+        console.log('FAILED [my test] Expected', expected, 'but got', actual)
+    }
+}
+
+assertObjectequal(expected,actual)
+
+//success case
+var expected = {foo: 5, bar: 6}
+var actual = {foo: 5, bar: 6}
+assertObjectequal(expected,actual)
+
+</script>
+</body>
+</html>
